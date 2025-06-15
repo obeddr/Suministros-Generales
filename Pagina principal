@@ -4,10 +4,101 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sumistros Generales</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+    header {
+      background-color: #0b5394;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+    section {
+      padding: 2rem;
+      text-align: center;
+    }
+    .productos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .producto {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 200px;
+      padding: 1rem;
+    }
+    footer {
+      background: #0b5394;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    .btn {
+      background: #0b5394;
+      color: white;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Bienvenidos a Sumistros Generales 🇭🇳</h1>
-  <p>Tu proveedor confiable de productos para el hogar, oficina y más en Honduras.</p>
-  <p>Sitio en construcción. ¡Muy pronto podrás ver nuestro catálogo!</p>
+
+  <header>
+    <h1>Sumistros Generales 🇭🇳</h1>
+    <nav>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Bienvenidos</h2>
+    <p>Somos tu proveedor confiable de productos para el hogar, oficina y más en Honduras.</p>
+  </section>
+
+  <section id="catalogo">
+    <h2>Catálogo de Productos</h2>
+    <div class="productos">
+      <div class="producto">
+        <h3>Producto 1</h3>
+        <p>Lps 150</p>
+        <a href="#" class="btn">Más info</a>
+      </div>
+      <div class="producto">
+        <h3>Producto 2</h3>
+        <p>Lps 300</p>
+        <a href="#" class="btn">Más info</a>
+      </div>
+      <div class="producto">
+        <h3>Producto 3</h3>
+        <p>Lps 75</p>
+        <a href="#" class="btn">Más info</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Escríbenos por WhatsApp:</p>
+    <a class="btn" href="https://wa.me/504XXXXXXXX" target="_blank">Enviar mensaje</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sumistros Generales | Honduras</p>
+  </footer>
+
 </body>
 </html>
